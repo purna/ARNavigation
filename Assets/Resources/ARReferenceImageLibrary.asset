@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ARReferenceImageLibrary
+  m_EditorClassIdentifier: Unity.XR.ARSubsystems::UnityEngine.XR.ARSubsystems.XRReferenceImageLibrary
+  m_GuidLow: 5634420680048430348
+  m_GuidHigh: 4092740625161678218
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5236339353033354843
+      m_GuidHigh: 9919879091204908717
+    m_SerializedTextureGuid:
+      m_GuidLow: 4906557487215179978
+      m_GuidHigh: 14242657399704972330
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Arch
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5285732532631591369
+      m_GuidHigh: 4240917042307254414
+    m_SerializedTextureGuid:
+      m_GuidLow: 11852659597564371489
+      m_GuidHigh: 17715654489036140411
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Cylinder
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5710057645788187347
+      m_GuidHigh: 16651034112912005819
+    m_SerializedTextureGuid:
+      m_GuidLow: 9525750983598653842
+      m_GuidHigh: 15831344985442036568
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Torus
+    m_Texture: {fileID: 0}
