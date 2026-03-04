@@ -1,0 +1,34 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/ui_semantic.uss?fileID=7433441132597879392&guid=f3c8dc65b61a74cdea606b5a3fa8eceb&type=3#ui_semantic"/>
+    <Style src="project://database/Assets/UI/Start3.uss?fileID=7433441132597879392&guid=0000000000000000&type=3#Start3"/>
+    
+    <!-- Main Container -->
+    <ui:VisualElement name="start3-container" class="screen-container">
+        
+        <!-- Header with Back Button -->
+        <ui:VisualElement name="room-header">
+            <ui:Button name="back-button" text="Back" class="btn-secondary back-btn"/>
+            <ui:VisualElement name="room-header-title">
+                <ui:Label text="Enter Room Number"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        
+        <!-- Main Content Area -->
+        <ui:VisualElement name="room-content">
+            
+            <!-- Instruction -->
+            <ui:Label text="Enter number of the nearest room to you" name="room-instruction" class="bold"/>
+            
+            <!-- Input Container -->
+            <ui:VisualElement name="room-input-container">
+                <ui:TextField label="" placeholder-text="Room number..." name="room-input" class="text-center"/>
+                <ui:Button name="confirm-button" text="Confirm" class="btn-primary"/>
+            </ui:VisualElement>
+            
+        </ui:VisualElement>
+        
+        <!-- Bottom Spacer -->
+        <ui:VisualElement name="room-bottom-spacer" style="flex-grow: 1;"/>
+        
+    </ui:VisualElement>
+</ui:UXML>

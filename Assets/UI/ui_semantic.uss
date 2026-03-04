@@ -1,0 +1,294 @@
+/* ============================================
+   ui_semantic.uss — Global Design System
+   Mobile-first, clean, modern
+   ============================================ */
+
+/* ── Design Tokens ─────────────────────────── */
+:root {
+    --brand-blue:       #2563EB;
+    --brand-blue-dark:  #1D4ED8;
+    --brand-blue-light: #DBEAFE;
+    --brand-blue-xlight:#EFF6FF;
+
+    --surface:          #FFFFFF;
+    --surface-soft:     #F8FAFC;
+    --surface-muted:    #F1F5F9;
+    --border:           #E2E8F0;
+
+    --text-primary:     #0F172A;
+    --text-secondary:   #475569;
+    --text-muted:       #94A3B8;
+    --text-on-brand:    #FFFFFF;
+
+    --accent-green:     #16A34A;
+    --accent-red:       #DC2626;
+
+    --radius-sm:  6px;
+    --radius-md:  12px;
+    --radius-lg:  18px;
+    --radius-xl:  24px;
+    --radius-full: 9999px;
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+
+    --font-xs:   12px;
+    --font-sm:   14px;
+    --font-base: 16px;
+    --font-md:   18px;
+    --font-lg:   22px;
+    --font-xl:   26px;
+    --font-2xl:  30px;
+}
+
+/* ── Reset / Base ──────────────────────────── */
+VisualElement {
+    background-color: transparent;
+}
+
+ScrollView {
+    flex-grow: 1;
+    background-color: transparent;
+}
+
+/* ── Screen wrapper ────────────────────────── */
+.screen {
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: var(--surface-soft);
+}
+
+/* ── Top Header Bar ────────────────────────── */
+.header-bar {
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--brand-blue);
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-4);
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+    min-height: 64px;
+}
+
+.header-bar .header-title {
+    flex-grow: 1;
+    font-size: var(--font-lg);
+    color: var(--text-on-brand);
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+}
+
+/* ── Card surface ──────────────────────────── */
+.card {
+    background-color: var(--surface);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+    margin-left: var(--space-4);
+    margin-right: var(--space-4);
+    margin-top: var(--space-3);
+    margin-bottom: var(--space-3);
+}
+
+/* ── Labels ────────────────────────────────── */
+Label.heading {
+    font-size: var(--font-2xl);
+    -unity-font-style: bold;
+    color: var(--text-primary);
+    white-space: normal;
+    -unity-text-align: upper-left;
+}
+
+Label.subheading {
+    font-size: var(--font-md);
+    -unity-font-style: bold;
+    color: var(--text-primary);
+    -unity-text-align: upper-left;
+}
+
+Label.body {
+    font-size: var(--font-base);
+    color: var(--text-secondary);
+    white-space: normal;
+    -unity-text-align: upper-left;
+}
+
+Label.caption {
+    font-size: var(--font-sm);
+    color: var(--text-muted);
+    white-space: normal;
+    -unity-text-align: upper-left;
+}
+
+Label.label-on-brand {
+    color: var(--text-on-brand);
+}
+
+/* ── Buttons ───────────────────────────────── */
+Button.btn-primary {
+    background-color: var(--brand-blue);
+    color: var(--text-on-brand);
+    font-size: var(--font-base);
+    -unity-font-style: bold;
+    border-radius: var(--radius-md);
+    border-width: 0;
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-4);
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+    min-height: 52px;
+}
+
+Button.btn-primary:hover {
+    background-color: var(--brand-blue-dark);
+}
+
+Button.btn-secondary {
+    background-color: transparent;
+    color: var(--brand-blue);
+    font-size: var(--font-base);
+    -unity-font-style: bold;
+    border-radius: var(--radius-md);
+    border-width: 2px;
+    border-color: var(--brand-blue);
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-4);
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+    min-height: 52px;
+}
+
+Button.btn-secondary:hover {
+    background-color: var(--brand-blue-xlight);
+}
+
+Button.btn-ghost {
+    background-color: transparent;
+    color: var(--text-secondary);
+    font-size: var(--font-sm);
+    border-radius: var(--radius-md);
+    border-width: 0;
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+}
+
+Button.btn-ghost:hover {
+    background-color: var(--surface-muted);
+}
+
+/* Location / list row buttons */
+Button.btn-row {
+    background-color: var(--surface);
+    color: var(--text-primary);
+    font-size: var(--font-base);
+    border-radius: var(--radius-md);
+    border-width: 1px;
+    border-color: var(--border);
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-4);
+    min-height: 56px;
+    -unity-text-align: middle-left;
+    margin-bottom: var(--space-2);
+}
+
+Button.btn-row:hover {
+    background-color: var(--brand-blue-light);
+    border-color: var(--brand-blue);
+}
+
+Button.btn-row:active {
+    background-color: var(--brand-blue-xlight);
+}
+
+/* ── TextField ─────────────────────────────── */
+TextField {
+    background-color: var(--surface-muted);
+    border-width: 1px;
+    border-color: var(--border);
+    border-radius: var(--radius-md);
+    font-size: var(--font-base);
+    color: var(--text-primary);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+    min-height: 52px;
+}
+
+TextField:focus {
+    border-color: var(--brand-blue);
+    background-color: var(--surface);
+}
+
+TextField > Label {
+    display: none;
+}
+
+/* ── Divider ───────────────────────────────── */
+.divider {
+    height: 1px;
+    background-color: var(--border);
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-4);
+}
+
+/* ── Icon chip ─────────────────────────────── */
+.icon-chip {
+    width: 40px;
+    height: 40px;
+    background-color: var(--brand-blue-light);
+    border-radius: var(--radius-full);
+    justify-content: center;
+    align-items: center;
+    margin-right: var(--space-3);
+}
+
+/* ── Utility ───────────────────────────────── */
+.flex-row    { flex-direction: row; }
+.flex-col    { flex-direction: column; }
+.flex-grow   { flex-grow: 1; }
+.center      { justify-content: center; align-items: center; }
+.text-center { -unity-text-align: middle-center; }
+
+/* ── Search Panel ───────────────────────────── */
+.search-panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background-color: var(--surface);
+    border-top-left-radius: var(--radius-xl);
+    border-top-right-radius: var(--radius-xl);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+    display: none;
+}
+
+.search-panel.visible {
+    display: flex;
+    height: 75%;
+}
+
+.search-header-btn {
+    background-color: var(--brand-blue);
+    padding: var(--space-4);
+    border-radius: 0;
+}
+
+.search-header-btn .title {
+    color: var(--text-on-brand);
+    font-size: var(--font-lg);
+    -unity-font-style: bold;
+}
+
+.search-close-btn {
+    align-self: flex-end;
+    margin: var(--space-3);
+}

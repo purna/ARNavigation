@@ -1,0 +1,155 @@
+{
+  "version": "1.0",
+  "building": "Main Building",
+  "locations": [
+    {
+      "id": "MAIN_ENTRANCE",
+      "title": "Main Entrance",
+      "description": "Main building entrance",
+      "floor": 0,
+      "worldPosition": { "x": 0.0, "y": 0.0, "z": 0.0 },
+      "category": "entrance",
+      "tags": ["entrance", "main", "door"]
+    },
+    {
+      "id": "ASSEMBLY_HALL",
+      "title": "Assembly Hall",
+      "description": "Large assembly hall for events",
+      "floor": 0,
+      "worldPosition": { "x": 20.0, "y": 0.0, "z": 15.0 },
+      "category": "rooms",
+      "tags": ["assembly", "hall", "event", "large"]
+    },
+    {
+      "id": "CANTEEN",
+      "title": "Canteen",
+      "description": "Food court and dining area",
+      "floor": 0,
+      "worldPosition": { "x": 30.0, "y": 0.0, "z": 10.0 },
+      "category": "facilities",
+      "tags": ["canteen", "food", "dining", "restaurant"]
+    },
+    {
+      "id": "LIBRARY",
+      "title": "Library",
+      "description": "Library and study area",
+      "floor": 1,
+      "worldPosition": { "x": 10.0, "y": 4.0, "z": 20.0 },
+      "category": "facilities",
+      "tags": ["library", "study", "books", "quiet"]
+    },
+    {
+      "id": "ROOM_001",
+      "title": "Room 001",
+      "description": "Room 001",
+      "floor": 0,
+      "worldPosition": { "x": 5.0, "y": 0.0, "z": 5.0 },
+      "category": "rooms",
+      "tags": ["room", "001"]
+    },
+    {
+      "id": "ROOM_002",
+      "title": "Room 002",
+      "description": "Room 002",
+      "floor": 0,
+      "worldPosition": { "x": 8.0, "y": 0.0, "z": 5.0 },
+      "category": "rooms",
+      "tags": ["room", "002"]
+    },
+    {
+      "id": "ROOM_003",
+      "title": "Room 003",
+      "description": "Room 003",
+      "floor": 0,
+      "worldPosition": { "x": 11.0, "y": 0.0, "z": 5.0 },
+      "category": "rooms",
+      "tags": ["room", "003"]
+    },
+    {
+      "id": "ROOM_101",
+      "title": "Room 101",
+      "description": "Room 101",
+      "floor": 1,
+      "worldPosition": { "x": 5.0, "y": 4.0, "z": 5.0 },
+      "category": "rooms",
+      "tags": ["room", "101"]
+    },
+    {
+      "id": "ROOM_102",
+      "title": "Room 102",
+      "description": "Room 102",
+      "floor": 1,
+      "worldPosition": { "x": 8.0, "y": 4.0, "z": 5.0 },
+      "category": "rooms",
+      "tags": ["room", "102"]
+    },
+    {
+      "id": "ROOM_103",
+      "title": "Room 103",
+      "description": "Room 103",
+      "floor": 1,
+      "worldPosition": { "x": 11.0, "y": 4.0, "z": 5.0 },
+      "category": "rooms",
+      "tags": ["room", "103"]
+    },
+    {
+      "id": "STAIRS_A",
+      "title": "Staircase A",
+      "description": "Main staircase",
+      "floor": 0,
+      "worldPosition": { "x": 15.0, "y": 0.0, "z": 10.0 },
+      "category": "circulation",
+      "tags": ["stairs", "staircase", "vertical"]
+    },
+    {
+      "id": "ELEVATOR",
+      "title": "Elevator",
+      "description": "Main elevator",
+      "floor": 0,
+      "worldPosition": { "x": 18.0, "y": 0.0, "z": 10.0 },
+      "category": "circulation",
+      "tags": ["elevator", "lift", "vertical"]
+    },
+    {
+      "id": "TOILETS",
+      "title": "Toilets",
+      "description": "Public restroom facilities",
+      "floor": 0,
+      "worldPosition": { "x": 25.0, "y": 0.0, "z": 5.0 },
+      "category": "facilities",
+      "tags": ["toilet", "wc", "restroom"]
+    }
+  ],
+  "qrAnchors": [
+    {
+      "qrCode": "MAIN_ENTRANCE",
+      "worldPosition": { "x": 0.0, "y": 1.5, "z": 1.0 },
+      "worldRotationY": 180.0,
+      "floor": 0
+    },
+    {
+      "qrCode": "ASSEMBLY_HALL",
+      "worldPosition": { "x": 20.0, "y": 1.5, "z": 14.0 },
+      "worldRotationY": 0.0,
+      "floor": 0
+    },
+    {
+      "qrCode": "CANTEEN",
+      "worldPosition": { "x": 30.0, "y": 1.5, "z": 9.0 },
+      "worldRotationY": 180.0,
+      "floor": 0
+    },
+    {
+      "qrCode": "LIBRARY",
+      "worldPosition": { "x": 10.0, "y": 5.5, "z": 19.0 },
+      "worldRotationY": 0.0,
+      "floor": 1
+    },
+    {
+      "qrCode": "STAIRS_A",
+      "worldPosition": { "x": 15.0, "y": 1.5, "z": 10.0 },
+      "worldRotationY": 90.0,
+      "floor": 0
+    }
+  ]
+}

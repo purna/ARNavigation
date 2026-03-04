@@ -1,0 +1,34 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/ui_semantic.uss?fileID=7433441132597879392&amp;guid=f3c8dc65b61a74cdea606b5a3fa8eceb&amp;type=3#ui_semantic"/>
+    <Style src="project://database/Assets/UI/Search.uss?fileID=7433441132597879392&amp;guid=deb672db4cabc427da3c4b72b13de701&amp;type=3#Search"/>
+    <ui:VisualElement name="search-screen" class="screen">
+        <ui:VisualElement name="search-header" class="header-bar">
+            <ui:Label name="search-header-title" text="Select Destination" class="header-title"/>
+            <ui:Label name="search-icon-label" text="🔍" class="search-section-icon" style="font-size: 24px;"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="search-map-strip" class="search-map-strip">
+            <ui:Image name="search-map-image" class="search-map-image"/>
+            <ui:Label name="search-map-label" text="Map Preview" class="caption search-map-label"/>
+        </ui:VisualElement>
+        <ui:ScrollView name="search-scroll" class="flex-grow">
+            <ui:VisualElement name="search-room-card" class="card search-section-card">
+                <ui:VisualElement name="search-room-header-row" class="search-row-header">
+                    <ui:Label name="search-room-icon-label" text="🔢" class="search-section-icon"/>
+                    <ui:Label name="search-room-title" text="Find by room number" class="subheading"/>
+                </ui:VisualElement>
+                <ui:TextField name="room-search-field" label="" placeholder-text="Enter room number…" class="search-text-field"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="search-name-card" class="card search-section-card">
+                <ui:VisualElement name="search-name-header-row" class="search-row-header">
+                    <ui:Label name="search-name-icon-label" text="📍" class="search-section-icon"/>
+                    <ui:Label name="search-name-title" text="Find by name" class="subheading"/>
+                </ui:VisualElement>
+                <ui:Button name="dest-canteen" text="Canteen" class="btn-row"/>
+                <ui:Button name="dest-main-entrance" text="Main Entrance" class="btn-row"/>
+                <ui:Button name="dest-library" text="Library" class="btn-row"/>
+                <ui:Button name="dest-assembly-hall" text="Assembly Hall" class="btn-row"/>
+            </ui:VisualElement>
+            <ui:VisualElement style="height: 24px;"/>
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

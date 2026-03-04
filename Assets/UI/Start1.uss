@@ -1,0 +1,120 @@
+/* ============================================
+   Start1.uss — QR Scan Screen
+   ============================================ */
+
+/* Hero area: deep blue gradient feel */
+.start1-hero {
+    align-items: center;
+    justify-content: center;
+    background-color: #1E3A8A;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/* QR bounding frame */
+.qr-frame {
+    width: 220px;
+    height: 220px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    /* relative positioning so corners sit on top */
+    position: relative;
+}
+
+/* QR image inside frame */
+.qr-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    background-color: #F1F5F9;
+}
+
+/* Corner scan decorators */
+.corner {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-color: #2563EB;
+    border-width: 0;
+}
+
+.corner-tl {
+    top: -4px;
+    left: -4px;
+    border-top-width: 4px;
+    border-left-width: 4px;
+    border-top-left-radius: 6px;
+}
+
+.corner-tr {
+    top: -4px;
+    right: -4px;
+    border-top-width: 4px;
+    border-right-width: 4px;
+    border-top-right-radius: 6px;
+}
+
+.corner-bl {
+    bottom: -4px;
+    left: -4px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+    border-bottom-left-radius: 6px;
+}
+
+.corner-br {
+    bottom: -4px;
+    right: -4px;
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+    border-bottom-right-radius: 6px;
+}
+
+/* Text card */
+.start1-text-card {
+    margin-top: 8px;
+}
+
+.start1-desc {
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+/* Action card */
+.start1-action-card {
+    margin-top: 4px;
+}
+
+.start1-scan-btn {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.start1-manual-btn {
+    width: 100%;
+}
+
+/* or-divider row */
+.start1-divider-row {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.start1-divider-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #E2E8F0;
+}
+
+.start1-divider-label {
+    margin-left: 12px;
+    margin-right: 12px;
+    -unity-text-align: middle-center;
+    color: #94A3B8;
+}

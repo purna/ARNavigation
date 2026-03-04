@@ -1,0 +1,29 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/ui_semantic.uss?fileID=7433441132597879392&guid=f3c8dc65b61a74cdea606b5a3fa8eceb&type=3#ui_semantic"/>
+    <Style src="project://database/Assets/UI/Start2.uss?fileID=7433441132597879392&guid=0000000000000000&type=3#Start2"/>
+    
+    <!-- Main Container -->
+    <ui:VisualElement name="start2-container" class="screen-container">
+        
+        <!-- Back Button -->
+        <ui:Button name="back-button" text="Back" class="btn-secondary back-btn"/>
+        
+        <!-- Header -->
+        <ui:VisualElement name="location-header" class="panel">
+            <ui:Label text="Please choose your current location" class="title"/>
+        </ui:VisualElement>
+        
+        <!-- Location Buttons -->
+        <ui:VisualElement name="location-list">
+            <ui:Button text="Main Entrance" name="loc-main-entrance" class="btn-secondary location-btn"/>
+            <ui:Button text="Assembly Hall" name="loc-assembly-hall" class="btn-secondary location-btn"/>
+            <ui:Button text="Canteen" name="loc-canteen" class="btn-secondary location-btn"/>
+            <ui:Button text="Library" name="loc-library" class="btn-secondary location-btn"/>
+            <ui:Button name="loc-other" text="Enter room number" class="btn-primary start2-other-btn"/>
+        </ui:VisualElement>
+        
+        <!-- Bottom Spacer -->
+        <ui:VisualElement name="location-bottom-spacer" style="flex-grow: 1;"/>
+        
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,70 @@
+/* ============================================
+   Start3.uss — Room Number Entry Screen
+   ============================================ */
+
+/* Back button inside the blue header */
+.start3-back-btn {
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 14px;
+    border-width: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 0;
+    padding-right: 16px;
+    min-height: 0;
+    opacity: 0.85;
+}
+
+.start3-back-btn:hover {
+    opacity: 1;
+    background-color: transparent;
+}
+
+/* Intro card */
+.start3-intro-card {
+    margin-top: 8px;
+}
+
+.start3-desc {
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+/* Input card */
+.start3-input-card {
+    margin-top: 4px;
+}
+
+.start3-field-label {
+    margin-bottom: 10px;
+}
+
+.start3-room-input {
+    width: 100%;
+    font-size: 20px;
+    min-height: 60px;
+    -unity-text-align: middle-left;
+    margin-bottom: 10px;
+}
+
+.start3-hint {
+    margin-top: 4px;
+}
+
+/* Confirm button */
+.start3-confirm-btn {
+    width: 100%;
+}
+
+/* Error state (apply via C#) */
+.start3-room-input.error {
+    border-color: #DC2626;
+    background-color: #FEF2F2;
+}
+
+/* Success state (apply via C#) */
+.start3-room-input.success {
+    border-color: #16A34A;
+    background-color: #F0FDF4;
+}

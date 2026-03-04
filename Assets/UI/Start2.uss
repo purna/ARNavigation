@@ -1,0 +1,41 @@
+/* ============================================
+   Start2.uss — Location Selection Screen
+   ============================================ */
+
+.start2-intro-card {
+    margin-top: 8px;
+}
+
+.start2-sub {
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+/* List card: tighten top padding so label sits flush */
+.start2-list-card {
+    padding-top: 16px;
+}
+
+.start2-list-label {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+}
+
+/* Remove bottom margin from last row button */
+#loc-other + .btn-row,
+.start2-list-card .btn-row:last-child {
+    margin-bottom: 0;
+}
+
+/* "Other" prompt card with a soft blue tint */
+.start2-other-card {
+    background-color: #EFF6FF;
+    border-width: 1px;
+    border-color: #BFDBFE;
+}
+
+.start2-other-btn {
+    margin-top: 16px;
+    width: 100%;
+}

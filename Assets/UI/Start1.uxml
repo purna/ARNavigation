@@ -1,0 +1,59 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/ui_semantic.uss?fileID=7433441132597879392&guid=f3c8dc65b61a74cdea606b5a3fa8eceb&type=3#ui_semantic"/>
+    <Style src="project://database/Assets/UI/Start1.uss?fileID=7433441132597879392&guid=0000000000000000&type=3#Start1"/>
+    
+    <!-- Main Container -->
+    <ui:VisualElement name="start1-container" class="screen-container">
+        
+        <!-- Top Panel - Header with Search Toggle -->
+        <ui:Button name="search-header" class="panel search-header-btn">
+            <ui:Label text="AR Navigation" class="title"/>
+        </ui:Button>
+        
+        <!-- Spacer -->
+        <ui:VisualElement name="top-spacer" style="flex-grow: 1;"/>
+        
+        <!-- Middle Section - QR Scan Area -->
+        <ui:VisualElement name="scan-area" class="flex-column flex-center">
+            <ui:Label text="Scan the QR code" name="scan-instruction" class="bold"/>
+            <ui:Label text="Please scan the QR code you used to download this app." name="scan-description" class="body text-center"/>
+            
+            <!-- QR Code Image Placeholder -->
+            <ui:VisualElement name="qr-image">
+                <ui:Image name="qr-code-image" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        
+        <!-- Spacer -->
+        <ui:VisualElement name="middle-spacer" style="flex-grow: 1;"/>
+        
+        <!-- Bottom Panel - Action Buttons -->
+        <ui:VisualElement name="bottom-panel" class="panel">
+            <ui:Button name="manual-button" 
+                       text="Enter location manually" 
+                       class="btn-secondary start1-manual-btn"/>
+        </ui:VisualElement>
+        
+        <!-- Spacer -->
+        <ui:VisualElement name="bottom-spacer" style="flex-grow: 1;"/>
+        
+        <!-- Search Panel (hidden by default, slides up to 75%) -->
+        <ui:VisualElement name="search-panel" class="search-panel">
+            <ui:Button name="search-close" text="Close" class="btn-primary search-close-btn"/>
+            <ui:ScrollView>
+                <ui:VisualElement name="room-search">
+                    <ui:Label text="Find by room number:" style="-unity-font-style: bold;"/>
+                    <ui:TextField label="" placeholder-text="Enter room number..."/>
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 1;">
+                    <ui:Label text="Find by name:" style="-unity-font-style: bold;"/>
+                    <ui:Button text="Canteen" name="dest-canteen" class="btn-secondary"/>
+                    <ui:Button text="Main Entrance" name="dest-main-entrance" class="btn-secondary"/>
+                    <ui:Button text="Library" name="dest-library" class="btn-secondary"/>
+                    <ui:Button text="Assembly Hall" name="dest-assembly-hall" class="btn-secondary"/>
+                </ui:VisualElement>
+            </ui:ScrollView>
+        </ui:VisualElement>
+        
+    </ui:VisualElement>
+</ui:UXML>
